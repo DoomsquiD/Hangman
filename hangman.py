@@ -162,6 +162,10 @@ class Hangman:  # creates main class
 		self.canvas.delete("msg")
 		guess = self.entry.get() # gets input from entry box
 		
+		if len(guess) > 1:
+		
+			guess = (guess[0])
+		
 		if guess.isalpha(): # checks if entry is a letter from a to z
 		
 			guess = guess.lower() # sets entry to lowercase so it matches word
